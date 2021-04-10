@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    /* overflow: hidden; */
+    background-image: linear-gradient(rgba(8, 8, 8, 0.596), rgb(0, 0, 0, 0.7)),
+        url("https://images.unsplash.com/photo-1609726494499-27d3e942456c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    height: 657px;
+    /* width: 1000px; */
+    background-size: 1000px;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.contain {
+    /* overflow: hidden; */
+    margin-top: 30px;
+    width: 600px;
+    background: lightgray;
+    height: 350px;
+    position: relative;
+    border: 5px solid #2c3e50;
+    border-radius: 10px;
+}
+
+#btn {
+    background-color: #f63854;
+    border: none;
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+    position: absolute;
+    outline: none;
+    left: 230px;
+    font-size: large;
+    top: 250px;
+}
+
+#btn:hover {
+    transform: scale(1.2);
+}
+
+.query {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-left: 145px;
+    margin-top: 40px;
+    font-size: large;
+}
+
+.resp {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-left: 130px;
+    margin-top: 40px;
+    font-size: large;
+}
+
+#voice {
+    width: 30px;
+    height: 30px;
+}
+
+.box-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.query-text {
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: large;
+}
+
+.resp-text {
+    font-size: large;
+    margin-top: 40px;
+    margin-left: 20px;
+}

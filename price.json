@@ -1,0 +1,44 @@
+[
+    {
+        "Name": "Bitcoin",
+        "Price": "$59,626.54",
+        "MarketCap": "$1.11T",
+        "Volume24h": "$55.3B"
+    },
+    {
+        "Name": "Ethereum",
+        "Price": "$2,125.08",
+        "MarketCap": "$245B",
+        "Volume24h": "$23.9B"
+    },
+    {
+        "Name": "CyberFM",
+        "Price": "$0.00",
+        "MarketCap": "$110B",
+        "Volume24h": "$4.98K"
+    },
+    {
+        "Name": "Binance",
+        "Price": "$465.46",
+        "MarketCap": "$71.9B",
+        "Volume24h": "$6.12B"
+    },
+    {
+        "Name": "XRP",
+        "Price": "$1.28",
+        "MarketCap": "$57.9B",
+        "Volume24h": "$22.4B"
+    },
+    {
+        "Name": "Tether",
+        "Price": "$1.00",
+        "MarketCap": "$44.3B",
+        "Volume24h": "$105B"
+    },
+    {
+        "Name": "Cardano",
+        "Price": "$1.21",
+        "MarketCap": "$38.6B",
+        "Volume24h": "$2.38B"
+    }
+]
