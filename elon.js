@@ -52,7 +52,7 @@ browserPromise.then(browser => {
 	})
 	.then(function () {
 		console.log(finalArr);
-		fs.writeFileSync("price.json", JSON.stringify(finalArr));
+		fs.writeFileSync("data.json", JSON.stringify(finalArr));
 	})
 
 
