@@ -41,7 +41,7 @@ browserPromise.then(browser => {
 	.then(function (arrayOfHrefsPromise) {
 		// console.log(arrayOfHrefsPromise);
 		let solveSinglePromise = solve("https://www.cointracker.io" + arrayOfHrefsPromise[0]);
-		for (let i = 1; i < 7; i++) {
+		for (let i = 1; i < 10; i++) {
 			let somePro = solveSinglePromise.then(function () {
 				let newPromise = solve("https://www.cointracker.io" + arrayOfHrefsPromise[i]);
 				return newPromise;

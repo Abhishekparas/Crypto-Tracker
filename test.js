@@ -5,53 +5,80 @@ let resp = document.querySelector(".resp");
 let data = [
     {
         "Name": "Bitcoin",
-        "Price": "$60,280.95",
-        "MarketCap": "$1.13T",
-        "Volume24h": "$55.1B",
+        "Price": "$60,155.81",
+        "MarketCap": "$1.12T",
+        "Volume24h": "$53.9B",
         "Code": "https://github.com/bitcoin/"
     },
     {
         "Name": "Ethereum",
-        "Price": "$2,141.83",
+        "Price": "$2,139.37",
         "MarketCap": "$247B",
-        "Volume24h": "$22.9B",
+        "Volume24h": "$22.5B",
         "Code": "https://github.com/ethereum"
     },
     {
         "Name": "CyberFM",
         "Price": "$0.00",
         "MarketCap": "$110B",
-        "Volume24h": "$4.86K"
+        "Volume24h": "$3.99K"
     },
     {
         "Name": "Binance",
-        "Price": "$466.10",
-        "MarketCap": "$72B",
-        "Volume24h": "$5.23B",
+        "Price": "$467.63",
+        "MarketCap": "$72.3B",
+        "Volume24h": "$5.13B",
         "Code": "https://www.reddit.com/r/BinanceExchange/"
     },
     {
         "Name": "XRP",
-        "Price": "$1.44",
-        "MarketCap": "$65.6B",
-        "Volume24h": "$29.6B",
+        "Price": "$1.46",
+        "MarketCap": "$66.2B",
+        "Volume24h": "$30.1B",
         "Code": "https://github.com/ripple"
     },
     {
         "Name": "Tether",
         "Price": "$1.00",
         "MarketCap": "$44.5B",
-        "Volume24h": "$111B",
+        "Volume24h": "$109B",
         "Code": "https://www.reddit.com/r/Tether/"
     },
     {
         "Name": "Cardano",
         "Price": "$1.22",
         "MarketCap": "$39B",
-        "Volume24h": "$2.45B",
+        "Volume24h": "$2.41B",
         "Code": "https://github.com/input-output-hk/cardano-sl/"
+    },
+    {
+        "Name": "Polkadot",
+        "Price": "$40.79",
+        "MarketCap": "$37.9B",
+        "Volume24h": "$1.52B"
+    },
+    {
+        "Name": "Litecoin",
+        "Price": "$253.96",
+        "MarketCap": "$17B",
+        "Volume24h": "$7.22B",
+        "Code": "https://github.com/litecoin-project/litecoin"
+    },
+    {
+        "Name": "Uniswap",
+        "Price": "$29.69",
+        "MarketCap": "$15.5B",
+        "Volume24h": "$388M"
+    },
+    {
+        "Name": "Dogecoin",
+        "Price": "$0.065",
+        "MarketCap": "$8.36B",
+        "Volume24h": "$2.05B",
+        "Code": "https://github.com/dogecoin/dogecoin"
     }
 ]
+
 
 var msg = new SpeechSynthesisUtterance();
 
