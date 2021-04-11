@@ -1,44 +1,50 @@
 [
     {
         "Name": "Bitcoin",
-        "Price": "$59,677.97",
-        "MarketCap": "$1.11T",
-        "Volume24h": "$55.4B"
+        "Price": "$60,150.13",
+        "MarketCap": "$1.12T",
+        "Volume24h": "$54.5B",
+        "Code": "https://github.com/bitcoin/"
     },
     {
         "Name": "Ethereum",
-        "Price": "$2,128.74",
-        "MarketCap": "$246B",
-        "Volume24h": "$23.9B"
+        "Price": "$2,139.03",
+        "MarketCap": "$247B",
+        "Volume24h": "$22.7B",
+        "Code": "https://github.com/ethereum"
     },
     {
         "Name": "CyberFM",
         "Price": "$0.00",
         "MarketCap": "$110B",
-        "Volume24h": "$5.15K"
+        "Volume24h": "$4K"
     },
     {
         "Name": "Binance",
-        "Price": "$469.08",
-        "MarketCap": "$72.5B",
-        "Volume24h": "$6.16B"
+        "Price": "$465.55",
+        "MarketCap": "$71.9B",
+        "Volume24h": "$5.15B",
+        "Code": "https://www.reddit.com/r/BinanceExchange/"
     },
     {
         "Name": "XRP",
-        "Price": "$1.28",
-        "MarketCap": "$58.2B",
-        "Volume24h": "$22.5B"
+        "Price": "$1.44",
+        "MarketCap": "$65.4B",
+        "Volume24h": "$29.8B",
+        "Code": "https://github.com/ripple"
     },
     {
         "Name": "Tether",
         "Price": "$1.00",
-        "MarketCap": "$44.3B",
-        "Volume24h": "$106B"
+        "MarketCap": "$44.5B",
+        "Volume24h": "$110B",
+        "Code": "https://www.reddit.com/r/Tether/"
     },
     {
         "Name": "Cardano",
-        "Price": "$1.21",
-        "MarketCap": "$38.7B",
-        "Volume24h": "$2.38B"
+        "Price": "$1.22",
+        "MarketCap": "$38.9B",
+        "Volume24h": "$2.43B",
+        "Code": "https://github.com/input-output-hk/cardano-sl/"
     }
 ]

@@ -1,54 +1,55 @@
 let query = document.querySelector(".query");
 let resp = document.querySelector(".resp");
 
+
 let data = [
     {
         "Name": "Bitcoin",
-        "Price": "$60,370.52",
+        "Price": "$60,280.95",
         "MarketCap": "$1.13T",
-        "Volume24h": "$52.9B"
+        "Volume24h": "$55.1B",
+        "Code": "https://github.com/bitcoin/"
     },
     {
         "Name": "Ethereum",
-        "Price": "$2,157.32",
-        "MarketCap": "$249B",
-        "Volume24h": "$23.2B"
+        "Price": "$2,141.83",
+        "MarketCap": "$247B",
+        "Volume24h": "$22.9B",
+        "Code": "https://github.com/ethereum"
     },
     {
         "Name": "CyberFM",
         "Price": "$0.00",
         "MarketCap": "$110B",
-        "Volume24h": "$5K"
+        "Volume24h": "$4.86K"
     },
     {
         "Name": "Binance",
-        "Price": "$476.96",
-        "MarketCap": "$73.7B",
-        "Volume24h": "$6.02B"
+        "Price": "$466.10",
+        "MarketCap": "$72B",
+        "Volume24h": "$5.23B",
+        "Code": "https://www.reddit.com/r/BinanceExchange/"
     },
     {
         "Name": "XRP",
-        "Price": "$1.29",
-        "MarketCap": "$58.6B",
-        "Volume24h": "$17.3B"
+        "Price": "$1.44",
+        "MarketCap": "$65.6B",
+        "Volume24h": "$29.6B",
+        "Code": "https://github.com/ripple"
     },
     {
         "Name": "Tether",
         "Price": "$1.00",
-        "MarketCap": "$44.4B",
-        "Volume24h": "$98.3B"
+        "MarketCap": "$44.5B",
+        "Volume24h": "$111B",
+        "Code": "https://www.reddit.com/r/Tether/"
     },
     {
         "Name": "Cardano",
-        "Price": "$1.23",
-        "MarketCap": "$39.4B",
-        "Volume24h": "$2.21B"
-    },
-    {
-        "Name": "Dogecoin",
-        "Price": "$0.063",
-        "MarketCap": "$8.13B",
-        "Volume24h": "$1.24B"
+        "Price": "$1.22",
+        "MarketCap": "$39B",
+        "Volume24h": "$2.45B",
+        "Code": "https://github.com/input-output-hk/cardano-sl/"
     }
 ]
 
@@ -94,6 +95,12 @@ recognition.onresult = function (event) {
                     resp.innerHTML = msg.text;
                     window.speechSynthesis.speak(msg);
                     console.log(obj["Price"]);
+                }
+                if (transcript.includes("code")) {
+                    msg.text = `Redirecting to github`;
+                    resp.innerHTML = msg.text;
+                    window.speechSynthesis.speak(msg);
+                    window.location.href = obj["Code"];
                 }
             }
         }

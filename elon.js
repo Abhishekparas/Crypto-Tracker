@@ -64,6 +64,19 @@ async function solve(link) {
 	}, headingPromise);
 
 	let info = await tab.$$(".my-auto.h4");
+	let aForGithub = await tab.$$(".my-5 .btn.btn-outline-dark.my-2.mx-1");
+
+	let linkForGithub;
+
+	for (let i = 0; i < aForGithub.length; i++) {
+		if (i == aForGithub.length - 1) {
+			let singleLink = await tab.evaluate(function (ele) {
+				return ele.getAttribute("href");
+			}, aForGithub[i]);
+			linkForGithub = singleLink;
+		}
+	}
+
 	let infoArr = [];
 
 	for (let i = 0; i < info.length; i++) {
@@ -105,6 +118,7 @@ async function solve(link) {
 		"Name": heading[0],
 		"Price": finalInfoArr[0],
 		"MarketCap": finalInfoArr[1],
-		"Volume24h": finalInfoArr[2]
+		"Volume24h": finalInfoArr[2],
+		"Code": linkForGithub,
 	})
 }
